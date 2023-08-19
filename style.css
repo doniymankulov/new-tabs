@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
+body {
+    background: linear-gradient(40deg, red,blue, deepskyblue, yellowgreen,);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.tabs input {
+    display: none;
+}
+.images img {
+    width: 200px;
+}
+label {
+    color: red;
+    font-weight: 900;
+    font-size: 24px;
+    margin: 0px 30px;
+}
+#all:checked ~ .css,
+#all:checked ~ .html,
+#all:checked ~ .js,
+#all:checked ~ .ts {
+    opacity: 1;
+    transition: 1.5s;
+}
+#html:checked ~ .css,
+#html:checked ~ .js,
+#html:checked ~ .ts {
+    opacity: 0.3;
+    transition: 1.5s;
+}
+
+#css:checked ~ .html,
+#css:checked ~ .js,
+#css:checked ~ .ts {
+    opacity: 0.3;
+    transition: 1.5s;
+}
+
+#js:checked ~ .html,
+#js:checked ~ .css,
+#js:checked ~ .ts {
+    opacity: 0.3;
+    transition: 1.5s;
+}
+
+#ts:checked ~ .html,
+#ts:checked ~ .js,
+#ts:checked ~ .css {
+    opacity: 0.3;
+    transition: 1.5s;
+}
+
+
+
+
